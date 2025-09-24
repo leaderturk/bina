@@ -14,18 +14,14 @@
     "wouter": "^2.11.0",
     "lucide-react": "^0.268.0",
     "clsx": "^1.2.1",
-    "cmdk": "^0.10.0",
-    "embla-carousel-react": "^7.1.0",
-    "react-day-picker": "^8.9.0",
     "react-hook-form": "^7.45.0",
-    "react-resizable-panels": "^0.7.0",
-    "recharts": "^2.6.2",
-    "tailwind-merge": "^1.14.0",
+    "react-day-picker": "^8.9.0",
     "zod": "^3.24.0",
     "react-query": "^4.36.0",
-    "class-variance-authority": "^0.6.2",
-    "input-otp": "^1.0.7",
-    "vaul": "^0.1.0"
+    "recharts": "^2.6.2",
+    "cmdk": "^0.10.0",
+    "embla-carousel-react": "^7.1.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
