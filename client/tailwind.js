@@ -10,15 +10,15 @@ const config: Config = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         serif: ["Georgia", "serif"],
-        mono: ["Menlo", "monospace"]
+        mono: ["Menlo", "monospace"],
       },
       colors: {
-        "alq-primary": "hsl(35, 95%, 55%)",
-        "alq-primary-dark": "hsl(35, 85%, 45%)",
-        "alq-accent": "hsl(35, 85%, 65%)",
         background: "hsl(210, 40%, 98%)",
         foreground: "hsl(222.2, 84%, 4.9%)",
-        border: "hsl(214.3, 31.8%, 91.4%)"
+        border: "hsl(214.3, 31.8%, 91.4%)",
+        "alq-primary": "hsl(35, 95%, 55%)",
+        "alq-primary-dark": "hsl(35, 85%, 45%)",
+        "alq-accent": "hsl(35, 85%, 65%)"
       },
       borderRadius: {
         lg: "0.5rem",
@@ -35,7 +35,7 @@ const config: Config = {
       }
     }
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;
