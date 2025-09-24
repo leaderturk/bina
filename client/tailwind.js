@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#ffffff", // bg-background
-        border: "#e5e7eb",     // border-border
+        background: {
+          DEFAULT: "#ffffff", // bg-background
+        },
+        border: {
+          DEFAULT: "#e5e7eb", // border-border
+        },
       },
     },
   },
