@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+const config: Config = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}"
@@ -9,13 +10,15 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         serif: ["Georgia", "serif"],
-        mono: ["Menlo", "monospace"],
+        mono: ["Menlo", "monospace"]
       },
       colors: {
-        // ALQ custom colors (kendi CSS var'ları ile birlikte çalışacak)
         "alq-primary": "hsl(35, 95%, 55%)",
         "alq-primary-dark": "hsl(35, 85%, 45%)",
-        "alq-accent": "hsl(35, 85%, 65%)"
+        "alq-accent": "hsl(35, 85%, 65%)",
+        background: "hsl(210, 40%, 98%)",
+        foreground: "hsl(222.2, 84%, 4.9%)",
+        border: "hsl(214.3, 31.8%, 91.4%)"
       },
       borderRadius: {
         lg: "0.5rem",
@@ -34,3 +37,5 @@ module.exports = {
   },
   plugins: []
 };
+
+export default config;
