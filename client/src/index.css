@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global styles with CSS variables */
+/* Global styles using CSS variables */
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -20,22 +20,21 @@ body {
 :root {
   --background: hsl(210, 40%, 98%);
   --foreground: hsl(222.2, 84%, 4.9%);
-  --font-sans: Inter, system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
   --border: hsl(214.3, 31.8%, 91.4%);
 }
 
 /* Dark mode override if kullanıyorsan */
 .dark {
-  --background: hsl(222.2, 84%, 4.9%);
-  --foreground: hsl(210, 40%, 98%);
+  --background: hsl(222.2,84%,4.9%);
+  --foreground: hsl(210,40%,98%);
 }
 
-/* Custom classes — ALQ ones */
+/* Custom classes */
 .bg-alq-primary { background-color: hsl(35, 95%, 55%); }
 .text-alq-primary { color: hsl(35, 95%, 55%); }
 .border-alq-primary { border-color: hsl(35, 95%, 55%); }
 
-/* Utility classes as önce */
 .transition-all { transition: all 0.3s ease; }
 
 .bg-gradient-alq {
@@ -62,5 +61,5 @@ body {
   border: 1px solid var(--border);
 }
 .dark .stat-card {
-  border: 1px solid hsl(214.3, 31.8%, 91.4%);
+  border: 1px solid var(--border);
 }
