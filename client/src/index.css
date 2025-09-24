@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Use CSS variables (defined below) directly instead of undefined Tailwind utilities */
+/* Global styles with CSS variables */
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -16,35 +16,26 @@ body {
   @apply mx-auto px-4;
 }
 
-/* CSS variables */
-:root{
+/* CSS variable definitions */
+:root {
   --background: hsl(210, 40%, 98%);
   --foreground: hsl(222.2, 84%, 4.9%);
-  --card: hsl(0,0%,100%);
-  --card-foreground: hsl(222.2,84%,4.9%);
-  --primary: hsl(35,95%,55%);
-  --primary-foreground: hsl(0,0%,100%);
-  --secondary: hsl(210,40%,96%);
-  --secondary-foreground: hsl(222.2,47.4%,11.2%);
-  --border: hsl(214.3,31.8%,91.4%);
   --font-sans: Inter, system-ui, sans-serif;
-  --radius: 0.5rem;
+  --border: hsl(214.3, 31.8%, 91.4%);
 }
 
-/* Dark mode variables */
-.dark{
-  --background: hsl(222.2,84%,4.9%);
-  --foreground: hsl(210,40%,98%);
-  --card: hsl(222.2,84%,4.9%);
-  --card-foreground: hsl(210,40%,98%);
-  --border: hsl(217.2,32.6%,17.5%);
+/* Dark mode override if kullanıyorsan */
+.dark {
+  --background: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
 }
 
-/* Custom ALQ colors - kept as classes (these are fine) */
+/* Custom classes — ALQ ones */
 .bg-alq-primary { background-color: hsl(35, 95%, 55%); }
 .text-alq-primary { color: hsl(35, 95%, 55%); }
 .border-alq-primary { border-color: hsl(35, 95%, 55%); }
 
+/* Utility classes as önce */
 .transition-all { transition: all 0.3s ease; }
 
 .bg-gradient-alq {
@@ -66,14 +57,10 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* admin-specific utilities */
-.admin-sidebar {
-  background: linear-gradient(180deg, hsl(222.2,84%,4.9%) 0%, hsl(217.2,32.6%,17.5%) 100%);
-}
 .stat-card {
   background: linear-gradient(135deg, hsl(0,0%,100%) 0%, hsl(210,40%,98%) 100%);
   border: 1px solid var(--border);
 }
 .dark .stat-card {
-  border: 1px solid hsl(217.2,32.6%,17.5%);
+  border: 1px solid hsl(214.3, 31.8%, 91.4%);
 }
