@@ -5,7 +5,8 @@
 
 /* Custom global styles */
 body {
-  @apply bg-background text-gray-900;
+  background-color: theme('colors.background.DEFAULT');
+  color: #111827; /* text-gray-900 */
 }
 
 .container {
