@@ -12,25 +12,25 @@ module.exports = {
         mono: ["Menlo", "monospace"],
       },
       colors: {
-        // Custom ALQ color system
+        // ALQ custom colors (kendi CSS var'ları ile birlikte çalışacak)
         "alq-primary": "hsl(35, 95%, 55%)",
         "alq-primary-dark": "hsl(35, 85%, 45%)",
-        "alq-accent": "hsl(35, 85%, 65%)",
+        "alq-accent": "hsl(35, 85%, 65%)"
       },
       borderRadius: {
         lg: "0.5rem",
-        xl: "1rem",
+        xl: "1rem"
       },
       keyframes: {
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
+          "100%": { opacity: "1", transform: "translateY(0)" }
+        }
       },
       animation: {
-        "fade-in-up": "fadeInUp 0.6s ease-out",
-      },
-    },
+        "fade-in-up": "fadeInUp 0.6s ease-out"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
